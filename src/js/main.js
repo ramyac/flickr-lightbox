@@ -4,33 +4,33 @@ var FlickrLightbox = {
     init: function() {
       FlickrLightbox.fetchPhotos();
 
-			document.getElementById('lightbox-prev-btn')
-				.addEventListener('click', function handlePrevClick() {
-					FlickrLightbox.prev();
-				});
+      document.getElementById('lightbox-prev-btn')
+        .addEventListener('click', function handlePrevClick() {
+          FlickrLightbox.prev();
+        });
 
-			document.getElementById('lightbox-next-btn')
-				.addEventListener('click', function handleNextClick() {
-					FlickrLightbox.next();
-				});
+      document.getElementById('lightbox-next-btn')
+        .addEventListener('click', function handleNextClick() {
+          FlickrLightbox.next();
+        });
 
-			document.onkeydown = function lightboxKeydown(event) {
-				event = event || window.event;
-				var code = event.keyCode || event.charCode;
+      document.onkeydown = function lightboxKeydown(event) {
+        event = event || window.event;
+        var code = event.keyCode || event.charCode;
 
-				switch(code) {
-				case 37: case 38:
-					FlickrLightbox.prev();
-					break;
-				case 39: case 40:
-					FlickrLightbox.next();
-					break;
-				}
+        switch(code) {
+        case 37: case 38:
+          FlickrLightbox.prev();
+          break;
+        case 39: case 40:
+          FlickrLightbox.next();
+          break;
+        }
 
-				if (code >= 37 && code <= 40) {
-					event.preventDefault();
-				}
-			};
+        if (code >= 37 && code <= 40) {
+          event.preventDefault();
+        }
+      };
     },
 
     prev: function() {
