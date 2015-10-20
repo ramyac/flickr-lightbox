@@ -16,6 +16,7 @@ html {
   display: table-cell;
   padding: 20px;
   background-color: white;
+  width: 95%;
 }
 .lightbox-container .lightbox-photo .lightbox-prev-btn,
 .lightbox-container .lightbox-photo .lightbox-next-btn {

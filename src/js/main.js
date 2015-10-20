@@ -69,7 +69,6 @@ var FlickrLightbox = {
         photo.url = 'https://farm' + photo.farm + '.staticflickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_z.jpg';
       });
       FlickrLightbox.photoList = photoArr;
-      console.log(FlickrLightbox.photoList);
       FlickrLightbox.insertPhotosintoDOM();
     },
 
