@@ -1,0 +1,31 @@
+// out: main.css, sourcemap: false, compress: false
+
+html{
+  background-color: black;
+}
+
+.lightbox-container{
+  max-width: 1200px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  .lightbox-photo{
+    margin: 0 auto;
+    display: table;
+    img{
+      display: table-cell;
+      padding: 20px;
+      background-color: white;
+    }
+    .lightbox-prev-btn, .lightbox-next-btn{
+      display: table-cell;
+      vertical-align: middle;
+      cursor: pointer;
+      font-size: 3em;
+    }
+    figcaption#imageTitle {
+      margin-top: 5px;
+    }
+  }
+}
