@@ -1,6 +1,6 @@
 # flickr-lightbox
 
-A simple vanilla JS implementation of a lightbox with photos from Flickr (uses Flickr photo search API)
+A simple vanilla JS implementation of a lightbox with (fixed number of) photos from Flickr (uses Flickr photo search API)
 
 **Demo**: http://ramyac.github.io/flickr-lightbox/
 
